@@ -2,7 +2,14 @@
 
 pamac update --no-confirm
 pamac install jdk-openjdk nodejs npm ttf-jetbrains-mono --no-confirm
-pamac build jetbrains-toolbox google-chrome gdrive teams --no-confirm
+pamac build jetbrains-toolbox google-chrome teams --no-confirm
+
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc"
 
 curl https://raw.githubusercontent.com/chubbyhippo/vimrc/master/.vimrc -o ~/.vimrc
+
 git config --global credential.helper store
+
