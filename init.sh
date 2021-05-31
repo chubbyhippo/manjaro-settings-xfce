@@ -1,7 +1,7 @@
 #!/bin/sh
 
-pamac update --no-confirm && \
-pamac install jdk-openjdk nodejs-lts-fermium npm ttf-jetbrains-mono --no-confirm && \
+pamac update --no-confirm
+pamac install jdk-openjdk nodejs-lts-fermium npm ttf-jetbrains-mono --no-confirm
 pamac build jetbrains-toolbox google-chrome teams --no-confirm
 
 mkdir ~/.npm-global
