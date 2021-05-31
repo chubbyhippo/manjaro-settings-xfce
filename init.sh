@@ -22,7 +22,7 @@ nvm install --lts=boron
 
 npm install -g --silent @angular/cli
 
-pamac build jetbrains-toolbox google-chrome teams visual-studio-code-bin insomnia --no-confirm
+pamac build jetbrains-toolbox google-chrome teams visual-studio-code-bin --no-confirm
 
 curl https://raw.githubusercontent.com/chubbyhippo/vimrc/master/.vimrc -o ~/.vimrc
 curl https://raw.githubusercontent.com/chubbyhippo/ideavimrc/main/.ideavimrc -o ~/.ideavimrc
