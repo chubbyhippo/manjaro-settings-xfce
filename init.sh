@@ -1,7 +1,7 @@
 #!/bin/sh
 
 pamac update --no-confirm
-pamac install jdk11-openjdk maven gradle nvm npm ttf-jetbrains-mono docker docker-compose snapd python2 --no-confirm
+pamac install jdk11-openjdk maven gradle nvm npm ttf-jetbrains-mono docker docker-compose snapd --no-confirm
 echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc
 source ~/.bashrc
 
