@@ -1,7 +1,7 @@
 #!/bin/sh
 
 pamac update --no-confirm
-pamac install jdk11-openjdk maven gradle nvm npm ttf-jetbrains-mono docker docker-compose snapd --no-confirm
+pamac install jdk11-openjdk maven gradle nvm npm ttf-jetbrains-mono docker docker-compose snapd python2 --no-confirm
 
 sudo usermod -aG docker $USER
 sudo systemctl enable --now docker.service
