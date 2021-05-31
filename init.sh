@@ -1,7 +1,7 @@
 #!/bin/sh
 
 pamac update --no-confirm
-pamac install vim jdk11-openjdk maven gradle nvm npm ttf-jetbrains-mono docker docker-compose snapd virtualbox linux510-virtualbox-host-modules --no-confirm
+pamac install vim jdk11-openjdk maven gradle nvm npm ttf-jetbrains-mono docker docker-compose snapd virtualbox linux510-virtualbox-host-modules redshift --no-confirm
 echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc
 source /usr/share/nvm/init-nvm.sh
 
