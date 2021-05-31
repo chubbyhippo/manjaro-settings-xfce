@@ -24,3 +24,5 @@ curl https://raw.githubusercontent.com/chubbyhippo/vimrc/master/.vimrc -o ~/.vim
 curl https://raw.githubusercontent.com/chubbyhippo/ideavimrc/main/.ideavimrc -o ~/.ideavimrc
 
 git config --global credential.helper store
+
+reboot
