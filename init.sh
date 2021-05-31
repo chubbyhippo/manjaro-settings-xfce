@@ -13,7 +13,7 @@ sudo snap install insomnia
 
 echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc
 source ~/.bashrc
-nvm install --lts
+nvm install --lts=boron
 
 # mkdir ~/.npm-global
 # npm config set prefix '~/.npm-global'
