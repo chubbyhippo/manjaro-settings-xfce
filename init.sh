@@ -1,7 +1,7 @@
 #!/bin/sh
 
 pamac update --no-confirm
-pamac install jdk-openjdk nvm npm ttf-jetbrains-mono docker docker-compose --no-confirm
+pamac install jdk11-openjdk maven gradle nvm npm ttf-jetbrains-mono docker docker-compose --no-confirm
 
 sudo usermod -aG docker $USER
 sudo systemctl enable docker.service
@@ -18,8 +18,9 @@ source ~/.bashrc
 
 npm install -g --silent @angular/cli
 
-pamac build jetbrains-toolbox google-chrome teams --no-confirm
+pamac build jetbrains-toolbox google-chrome teams visual-studio-code-bin --no-confirm
 
 curl https://raw.githubusercontent.com/chubbyhippo/vimrc/master/.vimrc -o ~/.vimrc
+curl https://raw.githubusercontent.com/chubbyhippo/ideavimrc/main/.ideavimrc -o ~/.ideavimrc
 
 git config --global credential.helper store
