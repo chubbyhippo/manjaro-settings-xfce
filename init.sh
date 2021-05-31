@@ -7,7 +7,7 @@ pamac build jetbrains-toolbox google-chrome teams --no-confirm
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc"
+source ~/.bashrc
 
 curl https://raw.githubusercontent.com/chubbyhippo/vimrc/master/.vimrc -o ~/.vimrc
 
