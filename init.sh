@@ -22,3 +22,5 @@ pamac build jetbrains-toolbox google-chrome teams visual-studio-code-bin --no-co
 git config --global credential.helper store
 
 nvm install --lts=erbium
+
+reboot
