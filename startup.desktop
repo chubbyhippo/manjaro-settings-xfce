@@ -2,3 +2,5 @@
 Type=Application
 Name=startup
 Exec=./startup.sh
+Comment=
+RunHook=0
