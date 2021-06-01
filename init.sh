@@ -7,7 +7,6 @@ source /usr/share/nvm/init-nvm.sh
 
 sudo usermod -aG docker $USER
 sudo systemctl enable docker.service
-sudo systemctl enable containerd.service
 
 curl https://raw.githubusercontent.com/chubbyhippo/vimrc/master/.vimrc -o ~/.vimrc
 curl https://raw.githubusercontent.com/chubbyhippo/ideavimrc/main/.ideavimrc -o ~/.ideavimrc
