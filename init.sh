@@ -15,6 +15,9 @@ sudo snap install insomnia
 
 curl https://raw.githubusercontent.com/chubbyhippo/vimrc/master/.vimrc -o ~/.vimrc
 curl https://raw.githubusercontent.com/chubbyhippo/ideavimrc/main/.ideavimrc -o ~/.ideavimrc
+curl https://raw.githubusercontent.com/chubbyhippo/manjaro-settings/master/startup.sh -o ~/.config/autostart/startup.sh
+chmod +x ~/.config/autostart/startup.sh
+curl https://raw.githubusercontent.com/chubbyhippo/manjaro-settings/master/startup.desktop -o ~/.config/autostart/startup.desktop
 
 pamac build jetbrains-toolbox google-chrome teams visual-studio-code-bin --no-confirm
 
