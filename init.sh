@@ -9,15 +9,15 @@ sudo usermod -aG docker $USER
 sudo systemctl enable --now docker.service
 sudo systemctl enable --now containerd.service
 
-sudo systemctl enable --now snapd.socket
-sudo ln -s /var/lib/snapd/snap /snap
-sudo snap install insomnia
+# sudo systemctl enable --now snapd.socket
+# sudo ln -s /var/lib/snapd/snap /snap
+# sudo snap install insomnia
 
 curl https://raw.githubusercontent.com/chubbyhippo/vimrc/master/.vimrc -o ~/.vimrc
 curl https://raw.githubusercontent.com/chubbyhippo/ideavimrc/main/.ideavimrc -o ~/.ideavimrc
 curl https://raw.githubusercontent.com/chubbyhippo/manjaro-settings/master/startup.desktop -o ~/.config/autostart/startup.desktop
 
-pamac build jetbrains-toolbox google-chrome teams visual-studio-code-bin --no-confirm
+pamac build jetbrains-toolbox google-chrome teams visual-studio-code-bin insomnia --no-confirm
 
 git config --global credential.helper store
 
