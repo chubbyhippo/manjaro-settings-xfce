@@ -1,7 +1,8 @@
 #!/bin/sh
 
 pamac update --no-confirm
-pamac install vim tmux jdk11-openjdk maven gradle nvm npm ttf-jetbrains-mono docker docker-compose snapd virtualbox linux510-virtualbox-host-modules redshift python2 libreoffice-still noto-fonts-emoji --no-confirm
+pamac install vim tmux nvm ttf-jetbrains-mono docker docker-compose noto-fonts-emoji --no-confirm
+pamac build google-chrome jetbrains-toolbox --no-confirm
 echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc
 source /usr/share/nvm/init-nvm.sh
 
@@ -15,7 +16,5 @@ curl https://raw.githubusercontent.com/chubbyhippo/manjaro-settings/master/start
 pamac build jetbrains-toolbox google-chrome teams visual-studio-code-bin insomnia --no-confirm
 
 git config --global credential.helper store
-
-nvm install --lts=erbium
 
 reboot
